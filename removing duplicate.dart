@@ -1,7 +1,3 @@
-List<String> removingDuplicate(List<String> inputList) {
-  return inputList.toSet().toList();
-}
-
 void main() {
   List<String> input = [
     "apple",
@@ -11,6 +7,7 @@ void main() {
     "banana",
     "mango"
   ];
-  List<String> result = removingDuplicate(input);
-  print(result);
+  List<String> remove = input.toSet().toList();
+  print(input);
+  print(remove);
 }
